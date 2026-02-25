@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Header from "./header/Header"
-import FormAddTask from "./form/formAddTask.jsx"
 import Column from "./column/Column.jsx"
+import InputAdd from "./inputAdd/InputAdd.jsx"
 
 function KanbanBoard() {
 
@@ -20,7 +20,7 @@ function KanbanBoard() {
   return (
     <div>
       <Header />
-      <FormAddTask AddTaches={AddTaches} />
+      <InputAdd AddTaches={AddTaches} />
       <Column listesTaches={listesTaches}   setListesTaches={setListesTaches}  />
     </div>
   )
